@@ -27,6 +27,6 @@ class AdminNotificationController extends AdminController
         $notification = $notificationService->findByUuId($uuid);
         $notification->update(['is_read'=>true]);
 
-        return to_route('admin.report-order-block.index',['filter[line_number]' => @$notification->data['line_number'],'filter[scan_date]' => @$notification->data['date'] ]);
+        return back();
     }
 }

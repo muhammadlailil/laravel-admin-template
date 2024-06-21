@@ -21,3 +21,7 @@ composer dump-autoload
 ```sh
 php artisan migrate
 ```
+- Run seeder to generate admin account
+```sh
+php artisan db:seed --class=Database\Seeders\Admin\AdminUserAccountSeeder
+```

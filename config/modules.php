@@ -9,49 +9,19 @@ return [
                "url" => "dashboard",
           ],
           [
-               "id" => "today-target",
-               "name" => "Today Target",
+               "id" => "attendance",
+               "name" => "Attendance",
                "icon" => "isax icon-watch",
-               "url" => "today-target",
-          ],
-          [
-               "id" => "manage-plan",
-               "name" => "Manage Plan",
-               "icon" => "isax icon-align-horizontally",
-               "url" => "manage-plan",
-          ],
-          [
-               "id" => "master-line",
-               "name" => "Master Line",
-               "icon" => "isax icon-bill",
-               "url" => "master/factory-line"
-          ],
-          [
-               "id" => "scan-barcode",
-               "name" => "Scan Barcode",
-               "icon" => "isax icon-barcode",
-               "url" => "scanner",
-          ],
-          [
-               "id" => "setting",
-               "name" => "Setting",
-               "icon" => "isax icon-setting-2",
-               "url" => "setting",
+               "url" => "attendance",
           ],
      ],
      "Report" => [
           [
-               "id" => "report-production",
-               "name" => "Report Production",
+               "id" => "report-sales",
+               "name" => "Report Sales",
                "icon" => "isax icon-building",
-               "url" => "report/production",
+               "url" => "report/sales",
           ],
-          [
-               "id" => "report-block",
-               "name" => "Report per Block",
-               "icon" => "isax icon-box-tick",
-               "url" => "report/order-block",
-          ]
      ],
      "Administrator" => [
           [

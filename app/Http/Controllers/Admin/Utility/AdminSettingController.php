@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class AdminSettingController extends Controller
 {
-    protected $properties = ['efficiency_percentage'];
+    protected $properties = ['seeting_key'];
     public function index(Request $request, SettingService $settingService)
     {
 
@@ -21,7 +21,7 @@ class AdminSettingController extends Controller
     public function store(Request $request, SettingService $settingService)
     {
         $request->validate([
-            'efficiency_percentage' => 'required'
+            'seeting_key' => 'required'
         ]);
 
         $settingService->store($request, $this->properties);
