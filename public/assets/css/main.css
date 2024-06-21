@@ -1,0 +1,282 @@
+@layer base {
+    @font-face {
+        font-family: "Krub-Bold";
+        src: url(../fonts/Krub/Krub-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: "Krub-Light";
+        src: url(../fonts/Krub/Krub-Light.ttf);
+    }
+
+    @font-face {
+        font-family: "Krub-Medium";
+        src: url(../fonts/Krub/Krub-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: "Krub-Regular";
+        src: url(../fonts/Krub/Krub-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Krub-SemiBold";
+        src: url(../fonts/Krub/Krub-SemiBold.ttf);
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #B22041;
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.main-sidebar,
+.app-wrapper {
+    transition: 0.5s;
+}
+
+body.sidebar-collapse .main-sidebar {
+    /* margin-left: -190px; */
+    width: 70px;
+}
+
+.main-sidebar nav .nav-item.has-submenu.show .nav-parent::after {
+    content: "\ebe7";
+}
+
+body.sidebar-collapse .app-wrapper {
+    padding-left: 70px;
+}
+
+body.sidebar-collapse
+    .main-sidebar
+    nav
+    .nav-item.has-submenu
+    .nav-parent::after {
+    content: "";
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item.has-submenu .nav-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item {
+    position: relative;
+    width: 100%;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item a {
+    display: flex;
+    justify-content: center;
+}
+
+body.sidebar-collapse .main-sidebar nav {
+    overflow: inherit;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item .menu-name {
+    display: none;
+}
+
+body.sidebar-collapse .submenu.collapse.show {
+    visibility: hidden;
+    height: 0;
+    margin-top: 0px;
+}
+body.sidebar-collapse .main-sidebar nav .nav-link {
+    height: 33px;
+}
+body.sidebar-collapse .main-sidebar .app-logo img{
+    height: 14px;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-link:hover .menu-name {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 39px;
+    background: #FEF2F3;
+    height: 33px;
+    white-space: nowrap;
+    border-left: 0;
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 28px;
+    color: #D12D4E;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item .submenu li a {
+    font-size: 11px;
+    padding: 6px 7px;
+}
+
+body.sidebar-collapse .main-sidebar nav .nav-item:hover .submenu {
+    height: fit-content;
+    position: absolute;
+    background: #fff;
+    left: 34px;
+    visibility: visible;
+    width: 175px;
+    top: 33px;
+    border-bottom-right-radius: 10px;
+    padding-left: 34px;
+    padding-bottom: 13px;
+    padding-right: 10px;
+    padding-top: 6px;
+    border-right: 1px solid #e5e7eb;
+}
+
+body.sidebar-collapse .main-sidebar nav .menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-checkbox::before {
+    cursor: pointer;
+    content: "\ec65";
+    font-family: "iconsax-outline" !important;
+    font-size: 18px;
+    color: #e5e5e5;
+    position: absolute;
+    top: -4px;
+}
+
+.input-checkbox-table::before {
+    cursor: pointer;
+    content: "\ec65";
+    font-family: "iconsax-outline" !important;
+    font-size: 18px;
+    color: #e5e5e5;
+    position: relative;
+    top: -16px;
+    background: white;
+    border-radius: 5px;
+}
+.input-checkbox:checked::before,
+.input-checkbox[checked="true"]::before {
+    font-family: "iconsax-bold" !important;
+    content: "\ec87";
+    color: #B22041;
+}
+
+.table-pagination .paginate-links nav div:first-child,
+.table-pagination .paginate-links nav div:nth-child(1) {
+    display: none !important;
+}
+.table-pagination .paginate-links nav div:nth-child(2) a {
+    border: none !important;
+    font-size: 11px !important;
+    font-family: "Krub-SemiBold";
+    padding: 4px 12px;
+    outline: none !important;
+    border-radius: 5px;
+    margin-right: 1px;
+}
+.table-pagination .paginate-links nav div:nth-child(2) span:first-child {
+    box-shadow: none !important;
+}
+.table-pagination .paginate-links nav div:nth-child(2) a:first-child,
+.table-pagination .paginate-links nav div:nth-child(2) a:last-child {
+    padding: 4px 6px;
+}
+.table-pagination .paginate-links nav div:nth-child(2) a:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+.table-pagination
+    .paginate-links
+    nav
+    div:nth-child(2)
+    span[aria-disabled="true"]
+    span {
+    border: none;
+    color: #ddd;
+    padding: 4px 12px;
+    outline: none !important;
+    padding: 4px 6px;
+}
+
+.table-pagination
+    .paginate-links
+    nav
+    div:nth-child(2)
+    span[aria-current="page"]
+    span {
+    border: none;
+    background-color: #B22041;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    margin-right: 1px;
+    font-size: 11px !important;
+    font-family: "Krub-SemiBold";
+}
+
+.nav-link[active] {
+    background-color: #FEF2F3;
+    color: #D12D4E;
+    border-left: 4px solid #D12D4E;
+    padding-inline-start: 6.5px !important;
+}
+
+.bg-authentication {
+    background-image: url("../img/bg-authentication.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.datatable .selected-line {
+    border-left: 3px solid #fea158;
+}
+.ts-wrapper.tom-select {
+    padding: 0px !important;
+}
+.ts-wrapper.tom-select .ts-control {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 12px 15px !important;
+}
+.ts-wrapper.tom-select .ts-dropdown{
+    border: 1px solid rgb(229, 231, 235);
+    box-shadow: none !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#barcode_scanner_reader__scan_region{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#html5-qrcode-button-camera-permission{
+    color: white;
+    font-size: 13px;
+    padding: 9px 11px;
+    border-radius: 10px;
+    background-color: #FF9401;
+}
+#html5-qrcode-anchor-scan-type-change{
+    display: none;
+}
+
+#barcode_scanner_reader{
+    border: 1px solid #e5e7eb !important;
+}
