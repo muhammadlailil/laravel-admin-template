@@ -5,7 +5,7 @@
 
 ## Installation
 
-- Copy all folder and file to your fresh laravel
+- Download and copy all folder to your fresh laravel
 - Copy this code and paste info composer.json autoload-dev under psr-4 config
 
 ```code
